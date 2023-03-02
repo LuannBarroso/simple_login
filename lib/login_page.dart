@@ -33,7 +33,11 @@ class _LoginPageState extends State<LoginPage> {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [],
+        children: [
+          _icon(),
+          _inputField("Username", usernameController),
+          _inputField("Username", passwordController),
+        ],
       ),
     );
   }
